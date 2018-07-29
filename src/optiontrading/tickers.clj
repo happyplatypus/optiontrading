@@ -386,7 +386,7 @@ indicators are maps with header and dates
 
 
 
-
+(pprint "test")
 (pprint "Long short signals...")
   (pprint (sort-by second signals ))
 
