@@ -340,8 +340,8 @@ indicators are maps with header and dates
 
     )
 ;(calc-correlation "SNX")
-(def tickers (take 3000 tickers))
-;(pprint tickers)
+(def tickers (take 30 tickers))
+
 ;( correlation-map (map vector (take 10 tickers) (map calc-correlation (take 10 tickers)))   )
 
 
@@ -363,7 +363,7 @@ indicators are maps with header and dates
 
 
 (def mean-reverting-tickers-corr correlation-map)
-;(println mean-reverting-tickers-corr)
+(println mean-reverting-tickers-corr)
 
 
 
@@ -390,7 +390,7 @@ indicators are maps with header and dates
 (pprint "Long short signals...")
   (pprint (sort-by second signals ))
 
-
+(spit (str utils/HOME "/data/optiontrading_outfile.txt")  (pr-str signals) )
 
   )
 
