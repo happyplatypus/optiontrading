@@ -388,9 +388,9 @@ indicators are maps with header and dates
 
 (pprint "test")
 (pprint "Long short signals...")
-  (pprint (sort-by second signals ))
+  (pprint (sort-by second signals ) )
 
-(spit (str utils/HOME "/data/optiontrading_outfile.txt")  (pr-str signals) )
+(spit (str utils/HOME "/data/optiontrading_outfile.txt")  (pr-str (sort-by second signals ) ) )
 
   )
 
