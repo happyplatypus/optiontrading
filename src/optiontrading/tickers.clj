@@ -340,7 +340,7 @@ indicators are maps with header and dates
 
     )
 ;(calc-correlation "SNX")
-(def tickers (take 30 tickers))
+(def tickers (take 3000 tickers))
 
 ;( correlation-map (map vector (take 10 tickers) (map calc-correlation (take 10 tickers)))   )
 
